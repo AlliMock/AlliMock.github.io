@@ -1,0 +1,39 @@
+
+
+body {
+	font-family: helvetica;
+	size: 14px;
+	color: #301E08;
+
+}
+
+
+#id {
+	font-family: times;
+	border: DASHED 4px black;
+	padding: 10px;
+	font-size: 12px;
+}
+
+.otherThing {
+	background-color: black;
+	opacity: 4;
+	color: white;
+}
+
+.mainbox {
+	background-color: white; 
+    text-align:left; 
+    vertical-align: middle; 
+    padding:20px 47px; 
+    color: #301E08 !important;
+    font-weight: normal;
+    font-size: 14px;
+    background: white;
+    margin: 0 20px;
+    border: 1px dashed pink;
+    box-shadow: 0 0 0 3px white, 0 10px 10px rgba(0, 0, 0, .5);
+    transition: .2s all;
+    position: relative;
+    top: 0;
+ }
