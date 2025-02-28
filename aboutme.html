@@ -42,11 +42,27 @@
 		<div id="box">
 		<center> <img src="garden.JPG" alt = "Allison" width = "650" height = "300" border = "5" > </center>
 		
-		 <p><b> I'm Allison, a senior at UC Berkeley! </b> I am a double major in economics and public health.
+		<p><b> I'm Allison!</b>
+		<p> I like hiking and travel, all kinds of music (movie/show soundtracks, orchestral, jazz, EDM, American and Korean pop, rock, indie, standards, etc.), meaningful song lyrics, puzzles of all kinds, learning languages (so far I have studied Spanish, Chinese, and Korean, and some Japanese), videogames, virtual reality, board/card games, violin, watercolor painting, seafood, puns, Harry Potter, interior design, and many different shows and movies (action, fantasy, crime dramas, etc.). </p>
+		<p> Right now in my free time, I am trying to improve my watercolor and drawing skills.</p>
+		<p> Bored? Let fate determine how you spend your next hour or two using my fun activity generator!</p>
+		
+		</div>
 
-		 <p> I like hiking and travel, all kinds of music (movie/show soundtracks, orchestral, jazz, EDM, American and Korean pop, rock, indie, standards, etc.), meaningful song lyrics, puzzles of all kinds, learning languages (so far I have studied Spanish, Chinese, and Korean, and some Japanese), videogames, virtual reality, board/card games, violin, watercolor painting, seafood, puns, Harry Potter, interior design, and many different shows and movies (action, fantasy, crime dramas, etc.). </p>
+		<div id="box">
 
-		 <p> Right now in my free time, I am trying to improve my watercolor and drawing skills. I have also been recently introduced to Rubik's cubes and enjoy trying to improve my average solve time (as of now it is around 35 seconds so I have a long way to go!).</p>
-		 </div>
+		<h1>Fun Activity Generator</h1>
+    	<p id="funactivity">Click the button and let fate decide!</p>
+    	<button onclick="generateHobby()">I want to have fun!</button>
+    	<script>
+        	function generateHobby() {
+            	const activities = 
+            	["Write an article about something you care about.", "Research and mix a new cocktail.", "Crochet at least 10 rounds of a current or new project.", "Work on a new cover song.", "Organize your photos or make a new photobook.", "Meditate.", "Play an hour or two of your favorite videogame.", "Build something new (or at least start to).", "Do skincare or try a new makeup style.", "Learn a new interior decor concept.", "Read at least 5 chapters of a current or new book.", "Study a foreign language.", "Learn a new concept related to your career.", "Draw or sketch something new.", "Watch an episode of that show you've been meaning to watch.", "Watch a movie you've been meaning to watch.", "Exercise! Do 50 jumping jacks.", "Exercise! Do 10 push-ups.", "Learn a new audio engineering technique.", "Try a new recipe.", "Make some music.", "Go out for a walk.", "Try a new hairstyle."];
+            	const randomHobby = activities[Math.floor(Math.random() * activities.length)]; document.getElementById("funactivity").textContent = "Your fun activity for the day is: " + randomHobby;
+        	}
+    	</script>
+
+		</div>
+
 	</body>
 </html>
